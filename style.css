@@ -45,11 +45,15 @@ body main p {
     0% {
         transform: translateY(-20px);
         opacity: 0.1;
-        color: var(--light-bg);
     }
     100% {
         transform: translateY(0px);
         opacity: 1;
-        color: #000;
+    }
+}
+
+@media screen and (max-width: 420px) {
+	body main p {
+        font-size: 0.95rem;
     }
 }
