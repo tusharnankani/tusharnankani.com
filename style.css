@@ -53,6 +53,10 @@ body main p {
 }
 
 @media screen and (max-width: 420px) {
+	body {
+	height: 100dvh;
+     } 
+	
 	body main p {
         font-size: 0.95rem;
     }
