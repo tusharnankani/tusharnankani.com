@@ -1,13 +1,4 @@
-const randomChange = [
-    "I admire people who think deeply and feed their minds with knowledge, who strengthen their intellect, who can control their emotions, people with whom one can delve into a soul-like dimension.",
-    "I like people with emotional and intellectual depth, speaking so passionately about everything they believe is honestly so beautiful.",
-    "If someone makes you happy, make them happier — Practicing to live up to this mindset.",
-    "I think the greatest form of intimacy is to understand someone.",
-    "Spending the weekends to build the life I admire, not to escape the life I have.",
-    "I believe regret is much more painful than failure; so I prefer to take the first step. I regret the times I haven't. I hope I take the first step with you.",
-    "The entire point of life is to be silly, weird and realy really kind.",
-    "I am a different person to different people. Annoying to one, talented to another. Quiet to a few, unknown to a lot. But who am I, to me?",
-];
+import randomChange from './random.js';
 
 let random = document.getElementById("random");
 let overlay = document.getElementById("overlay");
@@ -15,23 +6,27 @@ let magic = document.getElementById("magic");
 
 window.addEventListener('load', () => {
     random.textContent = randomChange[Math.floor(Math.random() * randomChange.length)];
+    console.clear();
 })
 
-setRandomColor = () => {
+let setRandomColor = () => {
     let randomColor = "";
     let chars = "0123456789abcdef";
-    for(i = 0; i < 6; i++)
+    for(let i = 0; i < 6; i++)
         randomColor += chars[Math.floor(Math.random() * 16)];
-        
+    
     overlay.style.display = "block";
-    overlay.style.backgroundColor = "#" + randomColor + "10";
+    overlay.style.backgroundColor = "#" + randomColor + "12";
 }
 
 let id; 
 
 magic.addEventListener('mouseenter', () => {
+    console.log(
+        '%cYou are staring into a colourful void. Want to dive deeper?',
+        'background: #f4f4f4; color: #001d3d; padding: 10px; margin: 20px 0px; font-size: 16px;  border-radius: 2px'
+    );
     id = setInterval(() => {
-        console.log("wow")
         setRandomColor();
     }, 500);
 })
@@ -39,4 +34,5 @@ magic.addEventListener('mouseenter', () => {
 magic.addEventListener('mouseleave', () => {
     clearInterval(id);
     overlay.style.display = "none";
+    console.clear();
 })

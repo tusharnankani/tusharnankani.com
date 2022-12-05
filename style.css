@@ -38,7 +38,7 @@ body main {
 
 body main p {
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     cursor: default;
 }
 
@@ -67,7 +67,6 @@ body main p {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    transition: 500ms ease all;
     z-index: 1;
 }
 
