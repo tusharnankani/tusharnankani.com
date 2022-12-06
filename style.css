@@ -68,6 +68,7 @@ body main p {
     height: 100vh;
     position: absolute;
     z-index: 1;
+    transition: 500ms all ease-in-out;
 }
 
 #magic a {
