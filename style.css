@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: url("data:image/svg+xml,%3Csvg width='8' height='8' style='filter:drop-shadow(0 0 1rem white)' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' r='4' fill='%23777474'/%3E%3C/svg%3E%0A") 4 4, auto !important;
 }
 
 body {
@@ -34,6 +35,7 @@ body main {
     gap: 1rem;
     animation: appearIn 1s ease-in-out 1;
     z-index: 2;
+    transition: all 0.5 ease;
 }
 
 body main p {
@@ -55,7 +57,7 @@ body main p {
 
 @media screen and (max-width: 420px) {
     body {
-	    height: 100dvh;
+        height: 100dvh;
     } 
 	
 	body main p {
@@ -74,5 +76,5 @@ body main p {
 #magic a {
     text-decoration: none;
     color: inherit;
-    cursor: none;
+    cursor: none !important;
 }

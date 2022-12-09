@@ -8,6 +8,8 @@ const randomChange = [
     "The entire point of life is to be silly, weird and realy really kind.",
     "Indifference is an aphrodisiac — despise the fact it is true.",
     "I am a different person to different people. Annoying to one, talented to another. Quiet to a few, unknown to a lot. Figuring out who am I, to me.",
+    "I find myself in absolute delight when I gamble and bluff, gives me the illusion that I am a step ahead.",
+    "I wanted to build a fancy portfolio with super shiny effects but I couldn't build one in three years because of the paradox of choices and the paradox of perfection. So, I took a 180 degree turn and I built this.",
 ];
 
 export default randomChange;
