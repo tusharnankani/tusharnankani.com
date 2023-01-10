@@ -5,7 +5,7 @@ const randomChange = [
     "I think the greatest form of intimacy is to understand someone.",
     "Spending the weekends to build the life I admire, not to escape the life I have.",
     "I believe regret is much more painful than failure; so I prefer to take the first step. I regret the times I haven't. I hope I take the first step with you.",
-    "The entire point of life is to be silly, weird and realy really kind.",
+    "The entire point of life is to be silly, weird and really really kind.",
     "Indifference is an aphrodisiac — despise the fact it is true.",
     "I am a different person to different people. Annoying to one, talented to another. Quiet to a few, unknown to a lot. Figuring out who am I, to me.",
     "I find myself in absolute delight when I gamble and bluff, gives me the illusion that I am a step ahead.",
