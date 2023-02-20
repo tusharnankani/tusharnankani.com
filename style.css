@@ -74,7 +74,10 @@ body main p {
 }
 
 #magic a {
-    text-decoration: none;
+    transition: all 0.3s ease-in;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 6px;
     color: inherit;
     cursor: none !important;
 }
