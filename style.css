@@ -24,6 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--light-bg);
+    overflow: hidden;
 }
 
 body main {
@@ -73,20 +74,27 @@ body main p {
     transition: 500ms all ease-in-out;
 }
 
-#magic a {
-    transition: all 0.3s ease-in;
+a {
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
 	text-underline-offset: 6px;
     color: inherit;
+}
+
+#magic a {
     cursor: none !important;
+}
+
+:root {
+    --transition-time: 1s; /* default; is being synced automatically in script.js */
+    --circle-diameter: 3rem;
 }
 
 .circle {
     height: var(--circle-diameter);
     width: var(--circle-diameter);
     position: absolute;
-    background: radial-gradient(circle, rgb(238, 243, 209) 50%, rgba(233,237,201,1) 100%);
+    background: radial-gradient(circle, rgb(241, 241, 241) 50%, rgb(255, 255, 255) 100%);
     border-radius: 50%;
     animation: circleZoomIn var(--transition-time) ease-in-out infinite;
     -webkit-box-shadow: 1px 1px 33px -6px rgba(0,0,0,0.14) inset;
