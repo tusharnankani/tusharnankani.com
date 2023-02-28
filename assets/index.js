@@ -3,6 +3,7 @@ import randomChange from './random.js';
 let random = document.getElementById("random");
 let overlay = document.getElementById("overlay");
 let magic = document.getElementById("magic");
+let anchorTags = document.getElementsByTagName("a");
 
 window.addEventListener('load', () => {
     random.textContent = randomChange[Math.floor(Math.random() * randomChange.length)];
@@ -36,3 +37,25 @@ magic.addEventListener('mouseleave', () => {
     overlay.style.display = "none";
     console.clear();
 })
+
+
+const ANIMATION_TIME_PER_CIRCLE = 2500; /* ms */
+const CIRCLE_DIAMETER = 3; /* rem */
+
+let GLOBAL_COUNTER = 0;
+
+createNewCircle = (x = window.innerWidth / 2, y = window.innerHeight / 2) => {
+    let newCircle = document.createElement('div');
+    newCircle.classList.add(`circle`, `circle-${GLOBAL_COUNTER++}`);
+
+    /* set the orginating circle from x and y coordinate */
+    newCircle.style.setProperty('top', `calc(${y}px - ${CIRCLE_DIAMETER / 2}rem`);
+    newCircle.style.setProperty('left', `calc(${x}px - ${CIRCLE_DIAMETER / 2}rem`);
+
+    body.appendChild(newCircle);
+    setTimeout(() => body.removeChild(newCircle), ANIMATION_TIME_PER_CIRCLE);
+}
+
+anchorTags.addEventListener('click', (event) => {
+    createNewCircle(event.x, event.y);
+});
