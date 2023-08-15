@@ -71,7 +71,15 @@ body main p {
     height: 100vh;
     position: absolute;
     z-index: 1;
-    transition: 500ms all ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 a {
